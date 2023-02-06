@@ -1,0 +1,94 @@
+body{
+    background-size: 100%;
+    background-image: url('/Sitio-de-recetas/img/Cocina/Cabecero.jpg');
+    background-attachment: fixed;
+    padding-top: 80px;
+}
+h2{
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline;
+}
+h3{
+    font-size: 28px;
+    text-align: center;
+    text-decoration: underline;
+}
+#glosario li{
+    margin-right: 50px;
+    height: 40px;
+    font-size: 25px;
+}
+section{
+    background-color:  #06d6a0;
+}
+nav{    
+    position: sticky;
+    top: 10px;
+}
+details{
+    width: 200px;
+    background-color: white;
+    color: #00bbf9;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.75;
+}
+
+footer{
+    border-top: 5px dashed;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+details p{
+    width: 1300px;
+    background-color: white;
+}
+#glosario h2, #glosario h3, #glosario ul{
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: start;
+    text-decoration: none;
+}
+#glosario ul{
+    border: solid 3px;
+}
+#glosario h2{
+    text-align: center;
+    text-decoration: underline;
+}
+#glosario h3{
+    font-style: oblique;
+}
+#glosario{
+    background-color:  #06d6a0;
+    width: 35%;
+    margin-left: 15px;
+    padding-bottom: 10px;
+}
+.imagenes{
+    height: 200px;
+    width: 200px;
+    margin-left: 25px;
+}
+#menu{
+    display: inline-block;
+    padding-left: 10px;
+    background: linear-gradient(#1a759f, #168aad);
+    width: 98%;
+    border-radius: 15px;
+    font-size: 30px;
+    height: 45px;
+    position: fixed;
+    top: 10px;  
+    opacity: 1;
+    z-index: 1;
+    text-align: center;
+}

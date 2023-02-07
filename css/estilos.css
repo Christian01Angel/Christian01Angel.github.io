@@ -1,151 +1,170 @@
 body{
     margin: 0;
 }
-header{
-    background: url('/img/fondo.jpg');
-    color: white;
-    padding: 5% 0 16%;
-    border: 1px solid black;
+/*Dispositivos Chicos*/
+@media (min-widht: 576px) {
+    #info{
+        font-size: 10px;
+    }
+    #navegacion{
+        font-size: 10px;
+    }
+    header{
+        background: url('/img/fondo.jpg');
+        color: white;
+        padding: 5% 0 16%;
+        border: 1px solid black;
+    }
+    main{
+        background: white;
+        color: black;
+    }
+    h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+    h3{
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    footer a{
+        font-size: 200%;
+    }
 }
-main{
-    background: white;
-    color: black;
+/*Dispositivos Medianos*/
+@media (min-width: 768px){
+    footer{
+        border: solid 2px;
+    }
 }
-h1{
-    text-align: center;
-    text-decoration: underline;
+/*Dispositivos Grandes*/
+@media(min-width: 992px){
+    footer a{
+        font-size: 400%;
+    }
+    footer li{
+        padding: 2%;
+    }
+    #linkedin{
+        color: #0077b6;
+        padding: 18% 45%;
+        border-radius: 15px;
+    }
+    #linkedin:hover{
+        transition: all 0.5s ease-in-out;
+        color:white;
+        background-color: #0077b6;
+    }
+    #github{
+        background-color: white;
+        color: black;
+        border-radius: 15px;
+        padding: 15px 30px;
+    }
+    #github:hover{
+        color: white;
+        background-color: black;
+        transition: all 0.5s ease-in-out;
+    }
+    #imagen{
+        width: 27%;
+        height: 27%;
+        border-radius: 50%;
+        animation: fadein 3s;
+    }
+    #contenedor{
+        border: dashed 2px;
+        text-align: center;
+        margin: 0 30%;
+    }
+    #menu, #menu:visited{
+        color: azure;
+        position: sticky;
+        padding: 0 100px;
+        text-decoration: none;
+    }
+    #navegacion{
+        border-radius: 1px;
+        background: #293241;
+        font-size: 20px;
+        height: 40px;
+        padding: 10px 60px;
+        color: azure;
+        width: 91%;
+        border: inset black;
+        position: sticky;
+        top: 0px;
+        z-index: 5000;
+    }
+    #info{
+        background-color: black;
+        color: white;
+        border: inset 3px;
+        margin: 0 20%;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .certificados{
+        display: flex;
+        flex-direction: row;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    .certificados img{
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        border-radius: 20%;
+        position: relative;
+        box-sizing: inherit;
+        margin: 10px;
+    }
+    .certificados img:hover{
+        transition: all ease-in-out 0.75s;
+        width: 340px;
+        height: 340px;
+        padding: 0;
+    }
+    #paginas{
+        background-color: black;
+        color: white;
+        padding-bottom: 30px;
+    }
+    #paginas #titulo{
+        text-align: center;
+        text-decoration: underline;
+        font-family: "MS Sans Serif", 'MS Serif', Courier, ;
+        size: 40px;
+    }
+    #paginas div{
+        border: solid 1px;
+        width: 300px;
+        height: 300px;
+        background-color: #caf0f8;
+        color: black;
+        letter-spacing: 3px;
+        line-height: 35px;
+    }
+    .sitios{
+        width: 300px;
+        height: 170px;
+        border: solid 1px white;
+    }
+    .sitios:hover{
+        filter: grayscale(100);
+        transition: 0.25s ease-in-out;
+    }
 }
-h3{
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-footer{
-    border: solid 2px;
-}
-img{
-    max-width: 100%;
-    max-height: 100%;
-}
-footer ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
-footer a{
-    font-size: 400%;
-}
-footer li{
-    padding: 2%;
-}
-#linkedin{
-    color: #0077b6;
-    padding: 15px 30px;
-    border-radius: 15px;
-}
-#linkedin:hover{
-    transition: all 0.5s ease-in-out;
-    color:white;
-    background-color: #0077b6;
-}
-#github{
-    background-color: white;
-    color: black;
-    border-radius: 15px;
-    padding: 15px 30px;
-}
-#github:hover{
-    color: white;
-    background-color: black;
-    transition: all 0.5s ease-in-out;
-}
-#imagen{
-    width: 27%;
-    height: 27%;
-    border-radius: 50%;
-    animation: fadein 3s;
-}
-#contenedor{
-    border: dashed 2px;
-    text-align: center;
-    margin: 0 30%;
-}
-#menu, #menu:visited{
-    color: azure;
-    position: sticky;
-    padding: 0 100px;
-    text-decoration: none;
-}
-#navegacion{
-    border-radius: 1px;
-    background: #293241;
-    font-size: 20px;
-    height: 40px;
-    padding: 10px 60px;
-    color: azure;
-    width: 91%;
-    border: inset black;
-    position: sticky;
-    top: 0px;
-    z-index: 5000;
-}
-#info{
-    background-color: black;
-    color: white;
-    border: inset 3px;
-    margin: 0 20%;
-    padding: 10px;
-    font-size: 20px;
-}
-.certificados{
-    display: flex;
-    flex-direction: row;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-.certificados img{
-    width: 300px;
-    height: 300px;
-    padding: 20px;
-    border-radius: 20%;
-    position: relative;
-    box-sizing: inherit;
-    margin: 10px;
-}
-.certificados img:hover{
-    transition: all ease-in-out 0.75s;
-    width: 340px;
-    height: 340px;
-    padding: 0;
-}
-#paginas{
-    background-color: black;
-    color: white;
-    padding-bottom: 30px;
-}
-#paginas #titulo{
-    text-align: center;
-    text-decoration: underline;
-    font-family: "MS Sans Serif", 'MS Serif', Courier, ;
-    size: 40px;
-}
-#paginas div{
-    border: solid 1px;
-    width: 300px;
-    height: 300px;
-    background-color: #caf0f8;
-    color: black;
-    letter-spacing: 3px;
-    line-height: 35px;
-}
-.sitios{
-    width: 300px;
-    height: 170px;
-    border: solid 1px white;
-}
-.sitios:hover{
-    filter: grayscale(100);
-    transition: 0.25s ease-in-out;
-}
+
 @keyframes slidein {
     from {
       margin-left: 100%;

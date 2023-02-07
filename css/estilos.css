@@ -89,7 +89,7 @@ footer li{
     z-index: 5000;
 }
 #info{
-    background-color: black;
+    background-color: blue;
     color: white;
     border: inset 3px;
     margin: 0 20%;

@@ -113,6 +113,17 @@ footer li{
     text-decoration: underline;
     font-family: "MS Sans Serif", 'MS Serif', Courier, ;
 }
+#paginas div{
+    border: solid 1px;
+    background-color: #caf0f8;
+    color: black;
+    letter-spacing: 3px;
+}
+.sitios{
+    border: solid 1px white;
+    width: 21.4%;
+    height: 170px;
+}
 
 
 /*Dispositivos Chicos*/
@@ -165,6 +176,11 @@ footer li{
     #paginas #titulo{
         size: 20px;
     }
+    #paginas div{
+        letter-spacing: 1.5px;
+        width: 150px;
+        height: 150px;
+    }
 }
 /*Dispositivos Medianos*/
 @media (min-width: 768px){
@@ -206,6 +222,16 @@ footer li{
     }
     #paginas #titulo{
         size: 30px;
+    }
+    #paginas div{
+        letter-spacing: 3px;
+        line-height: 35px;
+        width: 300px;
+        height: 300px;
+    }
+    .sitios:hover{
+        filter: grayscale(100);
+        transition: 0.25s ease-in-out;
     }
 }
 /*Dispositivos Grandes*/
@@ -254,25 +280,16 @@ footer li{
     #paginas #titulo{
         size: 40px;
     }
-    /*
     #paginas div{
-        border: solid 1px;
-        width: 300px;
-        height: 300px;
-        background-color: #caf0f8;
-        color: black;
         letter-spacing: 3px;
         line-height: 35px;
-    }
-    .sitios{
         width: 300px;
-        height: 170px;
-        border: solid 1px white;
+        height: 300px;
     }
     .sitios:hover{
         filter: grayscale(100);
         transition: 0.25s ease-in-out;
-    }*/
+    }
 }
 
 @keyframes slidein {

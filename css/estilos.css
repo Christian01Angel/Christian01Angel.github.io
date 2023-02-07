@@ -1,4 +1,6 @@
 body{
+    width: 100%;
+    height: 100%;
     margin: 0;
 }
 #info{
@@ -30,7 +32,7 @@ footer ul{
     flex-direction: row;
     list-style: none;
 }
-img{
+*{
     max-width: 100%;
     max-height: 100%;
 }
@@ -54,8 +56,6 @@ footer li{
 #contenedor{
     border: dashed 2px;
     text-align: center;
-    margin: 0 10%;
-    font-size: 15px;
 }
 #github:hover{
     color: white;
@@ -67,10 +67,56 @@ footer li{
     color:white;
     background-color: #0077b6;
 }
+/**/
+#menu, #menu:visited{
+    color: azure;
+    position: sticky;
+    text-decoration: none;
+}
+#navegacion{
+    border-radius: 1px;
+    background: #293241;
+    color: azure;
+    border: inset black;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 5000;
+}
+#info{
+    background-color: black;
+    color: white;
+    border: inset 3px;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0 20%;
+}
+.certificados{
+    display: flex;
+    flex-direction: row;
+}
+.certificados img{
+    position: relative;
+    border-radius: 20%;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 10px;
+}
+#paginas{
+    background-color: black;
+    color: white;
+    padding-bottom: 30px;
+}
+#paginas #titulo{
+    text-align: center;
+    text-decoration: underline;
+    font-family: "MS Sans Serif", 'MS Serif', Courier, ;
+}
 
 
 /*Dispositivos Chicos*/
-@media (min-widht: 576px) {
+@media (min-widht: 500px) {
     #info{
         font-size: 10px;
     }
@@ -90,10 +136,34 @@ footer li{
         animation: fadein 3s;
     }
     #contenedor{
-        border: dashed 2px;
-        text-align: center;
         margin: 0 10%;
         font-size: 15px;
+    }
+    #menu, #menu:visited{
+        padding: 0 20px;
+    }
+    #navegacion{
+        font-size: 20px;
+        height: 20px;
+        padding: 10px 60px;
+        width: 91%;
+    }
+    #info{
+        font-size: 15px;
+        margin: 0 10%;
+    }
+    .certificados{
+        display: flex;
+        flex-direction: column;
+    }
+    .certificados img{
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+        margin: 10px;
+    }
+    #paginas #titulo{
+        size: 20px;
     }
 }
 /*Dispositivos Medianos*/
@@ -106,6 +176,36 @@ footer li{
         height: 27%;
         border-radius: 50%;
         animation: fadein 3s;
+    }
+    #contenedor{
+        margin: 0 30%;
+        font-size: 15px;
+    } 
+    #menu, #menu:visited{
+        padding: 0 100px;
+    }
+    #navegacion{
+        font-size: 17px;
+        height: 40px;
+        width: 100;
+        padding: 10px 10px;
+    }
+    #info{
+        font-size: 17px;
+        margin: 0 20%;
+    }
+    .certificados{
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    .certificados img{
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        margin: 10px;
+    }
+    #paginas #titulo{
+        size: 30px;
     }
 }
 /*Dispositivos Grandes*/
@@ -120,40 +220,22 @@ footer li{
         animation: fadein 3s;
     }
     #contenedor{
-        border: dashed 2px;
-        text-align: center;
         margin: 0 30%;
+        font-size: 20px;
     }
     #menu, #menu:visited{
-        color: azure;
-        position: sticky;
-        padding: 0 100px;
-        text-decoration: none;
+        padding: 0 0 0 10%;
     }
     #navegacion{
-        border-radius: 1px;
-        background: #293241;
         font-size: 20px;
         height: 40px;
-        padding: 10px 60px;
-        color: azure;
-        width: 91%;
-        border: inset black;
-        position: sticky;
-        top: 0px;
-        z-index: 5000;
+        width: 100%;
     }
     #info{
-        background-color: black;
-        color: white;
-        border: inset 3px;
-        margin: 0 20%;
-        padding: 10px;
         font-size: 20px;
+        margin: 0 25%;
     }
     .certificados{
-        display: flex;
-        flex-direction: row;
         padding-right: 20px;
         padding-bottom: 20px;
     }
@@ -161,9 +243,6 @@ footer li{
         width: 300px;
         height: 300px;
         padding: 20px;
-        border-radius: 20%;
-        position: relative;
-        box-sizing: inherit;
         margin: 10px;
     }
     .certificados img:hover{
@@ -172,17 +251,10 @@ footer li{
         height: 340px;
         padding: 0;
     }
-    #paginas{
-        background-color: black;
-        color: white;
-        padding-bottom: 30px;
-    }
     #paginas #titulo{
-        text-align: center;
-        text-decoration: underline;
-        font-family: "MS Sans Serif", 'MS Serif', Courier, ;
         size: 40px;
     }
+    /*
     #paginas div{
         border: solid 1px;
         width: 300px;
@@ -200,7 +272,7 @@ footer li{
     .sitios:hover{
         filter: grayscale(100);
         transition: 0.25s ease-in-out;
-    }
+    }*/
 }
 
 @keyframes slidein {

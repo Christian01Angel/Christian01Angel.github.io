@@ -198,6 +198,7 @@ footer li{
     .certificados{
         padding-right: 20px;
         padding-bottom: 20px;
+        flex-direction: row;
     }
     .certificados img{
         width: 300px;
@@ -272,6 +273,7 @@ footer li{
     .certificados{
         padding-right: 20px;
         padding-bottom: 20px;
+        flex-direction: row;
     }
     .certificados img{
         width: 300px;

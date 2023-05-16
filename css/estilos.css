@@ -91,18 +91,18 @@ main{
     height: 170px;
     width: 39.4%;
 }
-.contacto{
+#contacto{
     border: solid 2px #000
 }
-.contacto ul{
+#contacto ul{
     display: flex;
     flex-direction: row;
     list-style: none;
 }
-.contacto a{
+#contacto a{
     font-size: 200%;
 }
-.contacto li{
+#contacto li{
     padding: 6%;
 }
 #linkedin{
@@ -115,13 +115,11 @@ main{
     color: black;
     border-radius: 15px;
     padding: 15px 30px;
-
-
+}
 
 /*Dispositivos Chicos*/
 @media screen and (max-width: 500px) {
     .certificados {
-        display: flex;
         flex-direction: column;
     }
     .sitios {

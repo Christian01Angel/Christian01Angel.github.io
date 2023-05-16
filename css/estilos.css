@@ -91,15 +91,18 @@ main{
     height: 170px;
     width: 39.4%;
 }
-.sitios ul{
+.contacto{
+    border: solid 2px #000
+}
+.contacto ul{
     display: flex;
     flex-direction: row;
     list-style: none;
 }
-.sitios a{
+.contacto a{
     font-size: 200%;
 }
-.sitios li{
+.contacto li{
     padding: 6%;
 }
 #linkedin{
@@ -112,193 +115,24 @@ main{
     color: black;
     border-radius: 15px;
     padding: 15px 30px;
-}
+
 
 
 /*Dispositivos Chicos*/
-@media (min-width: 500px) {
-    footer a{
-        font-size: 300%;
-    }
-    footer li{
-        padding: 2%;
-    }
-    #imagen{
-        width: 22%;
-        height: 22%;
-        border-radius: 50%;
-        animation: fadein 3s;
-    }
-    #contenedor{
-        margin: 0 10%;
-        font-size: 15px;
-    }
-    #menu, #menu:visited{
-        padding: 0 20px;
-        font-size: 15px;
-    }
-    #navegacion{
-        height: 20px;
-        padding: 10px 0;
-    }
-    #info{
-        font-size: 15px;
-    }
-    .certificados{
+@media screen and (max-width: 500px) {
+    .certificados {
+        display: flex;
         flex-direction: column;
     }
-    .certificados img{
-        width: 300px;
-        height: 300px;
-        margin: 10px;
+    .sitios {
+        width: 90%;
+        margin: 0 20px;
     }
-    #paginas #titulo{
-        font-size: 20px;
-    }
-    #paginas div{
-        letter-spacing: 1.5px;
-        width: 39.4%;
-    }
-    #pagina img{
-        width: 39.4%;
-    }
-}
-/*Dispositivos Medianos*/
-@media (min-width: 768px){
-    footer{
-        border: solid 2px;
-    }
-    #imagen{
-        width: 27%;
-        height: 27%;
-        border-radius: 50%;
-        animation: fadein 3s;
-    }
-    #contenedor{
-        margin: 0 30%;
-        font-size: 15px;
-    } 
-    #menu, #menu:visited{
-        padding: 0 100px;
-    }
-    #navegacion{
-        font-size: 17px;
-        height: 40px;
-        width: 100;
-        padding: 10px 10px;
-    }
-    #info{
-        font-size: 17px;
-        margin: 0 20%;
-    }
-    .certificados{
-        padding-right: 20px;
-        padding-bottom: 20px;
-        flex-direction: row;
-    }
-    .certificados img{
-        width: 300px;
-        height: 300px;
-        padding: 20px;
-        margin: 10px;
-    }
-    #paginas #titulo{
-        size: 30px;
-    }
-    #paginas div{
-        letter-spacing: 3px;
-        line-height: 35px;
-        width: 39.4%;
-        height: 300px;
-    }
-    #paginas img{
-        width: 39.4%;
-    }
-    .sitios:hover{
-        filter: grayscale(100);
-        transition: 0.25s ease-in-out;
-    }
-    #github:hover{
-        color: white;
-        background-color: black;
-        transition: all 0.5s ease-in-out;
-    }
-    #linkedin:hover{
-        transition: all 0.5s ease-in-out;
-        color:white;
-        background-color: #0077b6;
-    }
+    
 }
 /*Dispositivos Grandes*/
-@media(min-width: 992px){
-    footer a{
-        font-size: 400%;
-    }
-    #imagen{
-        width: 27%;
-        height: 27%;
-        border-radius: 50%;
-        animation: fadein 3s;
-    }
-    #contenedor{
-        margin: 0 30%;
-        font-size: 20px;
-    }
-    #menu, #menu:visited{
-        padding: 0 0 0 10%;
-    }
-    #navegacion{
-        font-size: 20px;
-        height: 40px;
-        width: 100%;
-    }
-    #info{
-        font-size: 20px;
-        margin: 0 25%;
-    }
-    #github:hover{
-        color: white;
-        background-color: black;
-        transition: all 0.5s ease-in-out;
-    }
-    #linkedin:hover{
-        transition: all 0.5s ease-in-out;
-        color:white;
-        background-color: #0077b6;
-    }
-    .certificados{
-        padding-right: 20px;
-        padding-bottom: 20px;
-        flex-direction: row;
-    }
-    .certificados img{
-        width: 300px;
-        height: 300px;
-        padding: 20px;
-        margin: 10px;
-    }
-    .certificados img:hover{
-        transition: all ease-in-out 0.75s;
-        width: 340px;
-        height: 340px;
-        padding: 0;
-    }
-    #paginas #titulo{
-        size: 40px;
-    }
-    #paginas img{
-        width: inherit;
-    }
-    #paginas div{
-        letter-spacing: 3px;
-        line-height: 35px;
-        width: 358px;
-        height: 300px;
-    }
-    .sitios:hover{
-        filter: grayscale(100);
-        transition: 0.25s ease-in-out;
-    }
+@media screen and (max-width: 992px){
+    
 }
 
 @keyframes slidein {
